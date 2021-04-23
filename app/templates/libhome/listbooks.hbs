@@ -1,0 +1,25 @@
+{{page-title "Listbook"}}
+<div class="addadmin">
+<table >
+    <thead >
+        <tr>
+        <th>BookID</th>
+        <th>BookName</th>
+        <th>BookAuthor</th>
+        <th>BookPrice</th>
+        </tr>
+    </thead>
+    <tbody >
+         {{#each model as |books|}}
+        <tr>
+            <td>{{books.id}}</td>
+            <td>{{books.bookname}}</td>
+            <td>{{books.bookauthor}}</td>
+            <td>{{books.bookprice}}</td>
+        
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+</div>
+{{outlet}}

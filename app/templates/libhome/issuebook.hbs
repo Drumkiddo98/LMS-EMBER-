@@ -1,0 +1,14 @@
+{{page-title "Issuebook"}}
+
+<div class="issuebookform">
+        <form action="issuebook" method="post">
+            <h3>Issue Book</h3>
+            <label for="bookid"></label>
+            {{input type="text" id="bookid" value=bookid placeholder="BookID"}}<br><br>
+
+            <label for="studid"></label>
+            {{input type="text" id="studid" value=studid placeholder="StudentID"}}<br><br>
+
+            <button type="button" {{action "issuebook"}}>Issue Book</button>
+        </form>
+    </div>

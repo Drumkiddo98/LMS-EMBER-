@@ -1,0 +1,21 @@
+{{page-title "Addstudent"}}
+
+
+<div class="addadmin">
+        <form >
+            <h3>Add Student</h3>
+            <label for="studid"></label>
+             {{input type="text" id="studid" value=studid placeholder="ID"}}<br><br>
+            <label for="studname"></label>           
+            {{input type="text" id="studname" value=studname placeholder="StudentName"}}<br><br>
+
+            <label for="studmail"></label>
+            {{input type="mail" id="studmail" value=studmail placeholder="StudentMail" }}<br><br>
+
+            <label for="studpass"></label>
+            {{input type="password" id="studpass" value=studpass placeholder="StudentPass"}}<br><br>
+
+            <button type="button"  {{action "addstudent"}}>Add Student</button>
+        </form>
+        
+    </div>

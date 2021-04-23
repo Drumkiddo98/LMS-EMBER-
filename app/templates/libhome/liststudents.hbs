@@ -1,0 +1,28 @@
+{{page-title "Liststudents"}}
+<div class="addadmin">
+<table >
+    <thead >
+        <tr>
+        <th>StudentID</th>
+        <th>StudentName</th>
+        <th>StudentMail</th>
+        </tr>
+    </thead>
+    <tbody>
+         {{#each model as |students|}}
+        <tr>
+             
+            <td>{{#link-to "studhome.studindex" students.id}}
+                {{students.id}} 
+                {{/link-to}}
+            </td>
+            <td>{{students.studname}}</td>
+            <td>{{students.studmail}}</td>        
+             
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+</div>
+
+{{outlet}}

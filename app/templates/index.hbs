@@ -1,0 +1,16 @@
+{{page-title "Index"}}
+<Indexnavbar></Indexnavbar>
+
+<div class="addadmin">
+       <form id="LibrarianLoginform">
+                <h3>Librarian Login</h3>
+                <label for="libmail"></label>
+                 {{input type="text" id="libmail" value=libmail placeholder="LibrarianMail"}}<br><br>
+                
+                <label for="libpass"></label>
+                 {{input type="password" id="libpass" value=libpass placeholder="LibrarianPass"}}<br><br>
+                 
+                <button type="button" onclick={{action "libLogin" }}>Login</button>
+            </form>
+    </div>
+{{outlet}}

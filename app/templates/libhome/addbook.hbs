@@ -1,0 +1,19 @@
+{{page-title "Addbook"}}
+
+ <div class="addadmin">
+        <form >
+        	<h3>Add Book</h3>
+            <label for="bookid"></label> 
+            {{input type="text" id="bookid" value=bookid placeholder="BookID"}}<br><br>
+            <label for="bookname"></label>
+            {{input type="text" id="bookname" value=bookname placeholder="BookName"}}<br><br>
+
+            <label for="bookauthor"></label> 
+            {{input type="text" id="bookauthor" value=bookauthor placeholder="BookAuthor"}}<br><br>
+
+            <label for="bookprice"></label>
+            {{input type="text" id="bookprice" value=bookprice placeholder="BookPrice"}}<br><br>
+            
+            <button type="button" {{action "addbook"}}>Add Book</button>
+        </form>
+    </div>

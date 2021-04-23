@@ -1,0 +1,24 @@
+{{page-title "Returnbooks"}}
+<div class="addadmin">
+<table >
+    <thead >
+        <tr>
+        <th>BOOKID</th>
+        <th>BOOKNAME</th>
+        <th>BOOKAUTHOR</th>
+        </tr>
+    </thead>
+    <tbody>
+         {{#each model as |books|}}
+        <tr>
+            <td>{{books.bookid}}</td>
+            <td>{{books.bookname}}</td>
+            <td>{{books.bookauthor}}</td>  
+            <button type="button" onclick={{action "returnBook" books}}>Return Book</button>      
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+</div>
+
+{{outlet}}
